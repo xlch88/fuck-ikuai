@@ -14,7 +14,7 @@
 (function() {
     'use strict';
     let s = setInterval(()=>{
-        let a = $('div[style="position: fixed; top: 0px; left: 0px; width: 100vw; height: 406vh; z-index: 1000; background-color: rgba(0, 0, 0, 0.4);"]');
+        let a = document.querySelector('div[style="position: fixed; top: 0px; left: 0px; width: 100vw; height: 406vh; z-index: 1000; background-color: rgba(0, 0, 0, 0.4);"]');
         if(a){
             clearInterval(s);
             a.remove();
